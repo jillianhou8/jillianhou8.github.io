@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="https://kit.fontawesome.com/1c486389b6.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+		<div class="wtf">
+			<h1>How are you feeling today?</h1>
+			<i class="fas fa-arrow-left" id="prevBtn"></i>
+			<i class="fas fa-arrow-right" id="nextBtn"></i>
+		</div>
+		<div class="carousel-container">
+
+			<div class="carousel-slide">
+				<img src="assets/img/devastated.png" id="last-dup">
+				<img src="assets/img/content.png">
+				<img src="assets/img/happy.png">
+				<img src="assets/img/excited.png">
+				<img src="assets/img/meh.png">
+				<img src="assets/img/sad.png">
+				<img src="assets/img/devastated.png">
+				<img src="assets/img/content.png" id="first-dup">
+			</div>
+		</div>
+		<div class="anxiety">
+			<h1>How anxious do you feel today?</h1>
+		</div>
+        <div class="range">
+            <div class="sliderValue">
+                <span>50</span>
+            </div>
+            <div class="field">
+                <div class="value left">0</div>
+                <input type="range" name="anxietyy" min="0" max="100" value="50" steps="1">
+                <div class="value right">100</div>
+            </div>
+		</div>
+		<div class="wtf">
+			<input type="text" id="text-box" placeholder="Type something ...">
+		</div>
+		<div class="wtf">
+			<button class="submit" onclick="javascript:clickinner(this);"><h3>Submit</h3></button>
+		</div>
+        <script type='text/javascript' src="assets/scripts/script.js"></script>
+    </body>
+</html>
