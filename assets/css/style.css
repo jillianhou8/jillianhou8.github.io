@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+    background: #BDDBFF;
+}
+
+.range {
+    margin-top: 30px;
+    height: 85px;
+    width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 0 70px 0 50px;
+}
+
+.range .sliderValue {
+    position: relative;
+    width: 100%;
+}
+
+.range .sliderValue span {
+    position: absolute;
+    color: #fff;
+    bottom: -18px;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom;
+    transition: transform 0.35s ease-in-out;
+    line-height: 55px;
+    /* z-index: 2; */
+} 
+
+.range .sliderValue span.show {
+    transform: translateX(-50%) scale(1);
+}
+
+.range .sliderValue span:after{
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background: #BDDBFF;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 3px solid #fff;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 15%;
+}
+
+.range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.range .field .value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: #BDDBFF;
+}
+
+.range .field .value.left {
+    left: -20px;
+}
+
+.range .field .value.right {
+    right: -40px;
+}
+
+.range .field input {
+    -webkit-appearance: none;
+    height: 7px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.range .field input::-webkit-slider-thumb{
+    cursor: pointer;
+}
+
+.emoji {
+    font-size: 100px;
+}
+
+.wtf {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 80%;
+    position: relative;
+}
+
+.carousel-container{
+    width: 42%;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+    left: 20%;
+    margin-top: 25%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+    left: 78%;
+    margin-top: 25%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.anxiety {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.memobox {
+    width: 50%;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: white;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: 'Andale Mono', sans-serif;
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    opacity: 30%;
+}
+
+.submit {
+    width: 15%;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    list-style: none;
+    margin: 0 40px;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+ul li a:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #9AA3FF;
+    transition: .4s;
+    transform: scale(.5);
+    z-index: -1;
+}
+
+ul li a:hover:before{
+    transform: scale(1.2);
+    box-shadow: 0 0 30px #9AA3FF;
+    filter: blur(8px);
+}
+
+input[type=text] {
+    text-indent: 10px;
+    width: 50%;
+    height: 100px;
+    border-radius: 20px;
+    outline: none;
+    margin: 0 auto;
+    background: white;
+    border: none;
+}
+
+input[type=text]::placeholder {
+    font-family: 'Andale Mono', sans-serif;
+    text-indent: 10px;
+}
